@@ -53,7 +53,7 @@ function processarAcesso(email, senha, cargo, listaEmails){
 
 
 }
-console.log(processarAcesso("novo@email.com", "123", "admin", emailsCadastrados));        // esperado: Erro: Senha inválida
-console.log(processarAcesso("yago@email.com", "yago2026", "admin", emailsCadastrados));   // esperado: Erro: E-mail já cadastrado
-console.log(processarAcesso("novo@email.com", "yago2026", "visitante", emailsCadastrados)); // esperado: Acesso negado: Cargo inválido
-console.log(processarAcesso("novo@email.com", "yago2026", "admin", emailsCadastrados));   // esperado: Acesso total ao sistema
+console.log(processarAcesso("novo@email.com", "123", "admin", emailsCadastrados));
+console.log(processarAcesso("yago@email.com", "yago2026", "admin", emailsCadastrados));   
+console.log(processarAcesso("novo@email.com", "yago2026", "visitante", emailsCadastrados)); 
+console.log(processarAcesso("novo@email.com", "yago2026", "admin", emailsCadastrados));  
