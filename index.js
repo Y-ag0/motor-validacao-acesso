@@ -23,3 +23,20 @@ let emailsCadastrados = ["yago@email.com", "admin@sistema.com"]; //Aqui se cria 
 console.log(verificarDuplicidade("yago@email.com", emailsCadastrados)); 
 console.log(verificarDuplicidade("novo@email.com", emailsCadastrados)); 
 console.log(verificarDuplicidade("admin@sistema.com", emailsCadastrados)); 
+
+function definirPermissao(cargo){
+    switch (cargo){
+        case "admin":
+            return "Acesso total ao sistema";
+        case "suporte":
+            return "Acesso de leitura e atendimento";
+        case "usuario":
+            return "Acesso padrão";
+        default:
+            return "Acesso negado: Cargo inválido";
+    }       
+}
+console.log(definirPermissao("admin"));     
+console.log(definirPermissao("suporte"));   
+console.log(definirPermissao("usuario"));   
+console.log(definirPermissao("visitante")); 
